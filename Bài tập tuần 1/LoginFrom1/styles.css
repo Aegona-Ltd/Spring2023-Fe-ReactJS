@@ -1,0 +1,132 @@
+body {
+    height: 100vh;
+    overflow-y: hidden;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: #DADADA;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding-left: 38px;
+    height: 38px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    font-size: 15px;
+    background: #00B5AD;
+    border: 1px solid #00B5AD;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    width: 100%;
+    font-weight: 600;
+}
+
+input[type="submit"]:hover {
+    background: #1e7974;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0em 0em 1em;
+}
+
+.image {
+    display: inline-block;
+    width: 2.5em;
+    height: auto;
+    vertical-align: middle;
+}
+
+.login-form {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 14px 14px 19.5px;
+}
+
+.content {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.login-header {
+    display: flex;
+    width: 100%;
+    color: #00B5AD;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 450px;
+}
+
+body>.login {
+    height: 100%;
+}
+
+.column {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+}
+
+.sign-up-form {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0em;
+    background: #F8F8F9;
+    padding: 1em 1.5em;
+    line-height: 1.4285em;
+    color: rgba(0, 0, 0, 0.87);
+    transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 1px rgb(34 36 38 / 22%) inset, 0px 0px 0px 0px rgb(0 0 0 / 0%);
+}
+
+.input-icon {
+    display: flex !important;
+    position: absolute;
+    text-align: center;
+    opacity: 0.5;
+    align-items: center;
+    height: 100%;
+    width: 38px;
+    font-size: 20px !important;
+    justify-content: center;
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid #719ECE;
+}
+
+a {
+    color: #4183C4;
+    text-decoration: none;
+}
+
+::placeholder {
+    opacity: 0.5;
+}
