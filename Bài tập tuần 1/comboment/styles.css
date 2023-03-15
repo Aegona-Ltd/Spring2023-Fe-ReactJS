@@ -17,7 +17,7 @@ body {
 }
 
 :root {
-    --border-color: rgba(255, 255, 255, 0.1)
+    --border-color: rgba(255, 255, 255, 0.1);
 }
 
 *,
@@ -37,6 +37,7 @@ body {
 
 .main-content {
     height: 100vh;
+    padding-top: 60px;
 }
 
 .h-w-100 {
@@ -57,9 +58,12 @@ body {
 }
 
 .topnav {
-    overflow: auto;
+    position: fixed;
+    width: 100%;
     backdrop-filter: blur(40px);
     opacity: 1;
+    z-index: 1000;
+    display: block;
 }
 
 .topnav a {
@@ -74,9 +78,10 @@ body {
 .topnav a:hover {
     padding: 8px 16px;
     border-radius: 10px;
-    border-width: 0.2px;
+    border-width: 1px;
     border-style: solid;
-    border-color: #fff;
+    border-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .nav-menu {
@@ -115,7 +120,6 @@ body {
     align-items: center;
 }
 
-.btn-outline {}
 
 .nav-menu-end a:hover {
     border-radius: 24px 24px 0px;
@@ -123,9 +127,10 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border-width: 0.2px;
+    border-width: 1px;
     border-style: solid;
-    border-color: #fff;
+    border-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .btn-sign-up {
@@ -134,8 +139,9 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border-width: 0.2px;
+    border-width: 1px;
     border-style: solid;
+    background-color: rgba(0, 0, 0, 0.2);
     border-color: rgba(29, 94, 237, 1);
 }
 
@@ -904,7 +910,7 @@ h6,
 .content-create-bg {
     width: 560px;
     height: min-content;
-    margin: 80px auto auto 230px;
+    margin: 80px auto auto 240px;
     flex: 0 0 auto;
     transform: none;
     aspect-ratio: unset;
@@ -1111,6 +1117,10 @@ h6,
     gap: 60px;
 }
 
+.gap-10 {
+    gap: 10px;
+}
+
 .text-center {
     text-align: center;
 }
@@ -1248,4 +1258,63 @@ h6,
 
 .h-550px {
     height: 550px;
+}
+
+.transition-05 {
+    transition: 0.5s;
+}
+
+.animation:hover .hover-rotate2D {
+    transform: rotate(90deg);
+}
+
+.animation:hover .hover-text {
+    margin-left: 3px;
+    color: gainsboro;
+}
+
+.h-860px {
+    height: 860px;
+}
+
+footer {
+    background-color: rgb(7, 8, 24);
+    width: 100%;
+    opacity: 1;
+    position: relative;
+    overflow: visible;
+    height: min-content;
+    display: flex;
+    flex-flow: column nowrap;
+    place-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 80px 30px;
+}
+
+.footer-content {
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+.label-icon {
+    width: 155px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+}
+
+.icon-30 {
+    width: 30px;
+    height: 30px;
 }
